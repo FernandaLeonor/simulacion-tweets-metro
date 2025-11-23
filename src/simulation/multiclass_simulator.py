@@ -6,7 +6,7 @@ from datetime import datetime
 from sentence_transformers import SentenceTransformer
 from catboost import CatBoostClassifier
 import json 
-from generador_tweets_realistas import generar_tweet_simulado 
+from src.data_generation.realistic_tweet_generator import generar_tweet_simulado 
 
 # ================= CONFIG =================
 INTERVALO = 5  # Más rápido para ver las alertas (5 segundos)
@@ -25,18 +25,18 @@ dias_semana = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domin
 # ================= CARGAR MODELOS =================
 print("Cargando cerebro...")
 model_cb = CatBoostClassifier()
-model_cb.load_model("modelo_clasificacion_falla.cbm") # Usar el modelo de clasificación de falla
+model_cb.load_model("models/modelo_clasificacion_falla.cbm") # Usar el modelo de clasificación de falla
 embed_model = SentenceTransformer('xlm-roberta-base')
 
 # Cargar el mapeo de etiquetas
 try:
-    with open('label_encoding.json', 'r', encoding='utf-8') as f:
+    with open('data/processed/label_encoding.json', 'r', encoding='utf-8') as f:
         label_mapping_raw = json.load(f)
     # Convertir claves de string a int
     label_mapping = {int(k): v for k, v in label_mapping_raw.items()}
     print(f"Mapeo de etiquetas cargado: {label_mapping}")
 except FileNotFoundError:
-    print("Error: No se encontró 'label_encoding.json'. Asegúrate de que el modelo de clasificación haya sido entrenado y guardado.")
+    print("Error: No se encontró 'data/processed/label_encoding.json'. Asegúrate de que el modelo de clasificación haya sido entrenado y guardado.")
     exit()
 
 # Definiciones de fallas para mostrar en el tablero

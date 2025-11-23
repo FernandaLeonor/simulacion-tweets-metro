@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pdb
 
 # Entornos virtuales
 env/
@@ -10,18 +11,42 @@ venv/
 .venv/
 *.env
 
-# Archivos de datos y modelos
-datos_entrenamiento.json
-modelo_final.cbm
-catboost_info/
-features_embeddings.csv
-modelo_deteccion_falla.cbm
-modelo_clasificacion_falla.cbm
-label_encoding.json
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Archivos temporales o de logs
+# Modelos entrenados (grandes archivos binarios)
+models/*.cbm
+models/*.pkl
+models/*.h5
+
+# Datos procesados (pueden ser regenerados)
+data/raw/
+data/processed/*.csv
+data/processed/*.json
+
+# Logs y archivos temporales
+logs/*.log
+logs/catboost_info/
 *.log
 *.tmp
 
-# Carpeta de cache de Sentence Transformers / HuggingFace
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Cache de modelos de HuggingFace / Sentence Transformers
 .cache/
+transformers_cache/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/

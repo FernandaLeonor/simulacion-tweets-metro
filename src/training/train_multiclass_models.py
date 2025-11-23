@@ -12,10 +12,10 @@ print("Iniciando el proceso de entrenamiento de modelos...")
 
 # 1. Cargar los datos
 try:
-    df = pd.read_csv('features_embeddings.csv')
+    df = pd.read_csv('data/processed/features_embeddings.csv')
     print("CSV 'features_embeddings.csv' cargado correctamente.")
 except FileNotFoundError:
-    print("Error: No se encontró el archivo 'features_embeddings.csv'. Asegúrate de generarlo primero.")
+    print("Error: No se encontró el archivo 'data/processed/features_embeddings.csv'. Asegúrate de generarlo primero.")
     exit()
 
 # 2. Preparación de datos
@@ -73,8 +73,8 @@ print("Reporte de Clasificación:")
 print(classification_report(y_test1, y_pred1))
 
 # Guardar el modelo 1
-model1.save_model('modelo_deteccion_falla.cbm')
-print("✅ Modelo 1 guardado como 'modelo_deteccion_falla.cbm'")
+model1.save_model('models/modelo_deteccion_falla.cbm')
+print("✅ Modelo 1 guardado como 'models/modelo_deteccion_falla.cbm'")
 
 
 # --- Modelo 2: Clasificación del Tipo de Falla (Multiclase) ---
@@ -97,9 +97,9 @@ if not df_fallas.empty:
     
     # Guardar el mapeo de etiquetas
     label_mapping = {index: label for index, label in enumerate(le.classes_)}
-    with open('label_encoding.json', 'w', encoding='utf-8') as f:
+    with open('data/processed/label_encoding.json', 'w', encoding='utf-8') as f:
         json.dump(label_mapping, f, ensure_ascii=False, indent=4)
-    print(f"Mapeo de etiquetas para el Modelo 2 guardado en 'label_encoding.json'. Clases: {le.classes_}")
+    print(f"Mapeo de etiquetas para el Modelo 2 guardado en 'data/processed/label_encoding.json'. Clases: {le.classes_}")
 
     # Debido al bajo número de muestras con fallas, no se creará un conjunto de prueba.
     # El modelo se entrenará con todos los datos de fallas disponibles.
@@ -125,8 +125,8 @@ if not df_fallas.empty:
     print("\nEvaluación del Modelo 2 omitida debido a la falta de un conjunto de prueba.")
 
     # Guardar el modelo 2
-    model2.save_model('modelo_clasificacion_falla.cbm')
-    print("✅ Modelo 2 guardado como 'modelo_clasificacion_falla.cbm'")
+    model2.save_model('models/modelo_clasificacion_falla.cbm')
+    print("✅ Modelo 2 guardado como 'models/modelo_clasificacion_falla.cbm'")
 
 else:
     print("⚠️ No hay suficientes datos de fallas para entrenar el segundo modelo.")

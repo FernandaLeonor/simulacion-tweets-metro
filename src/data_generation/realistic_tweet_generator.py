@@ -68,7 +68,7 @@ tipos_usuario = [
 
 # ================= NUEVO: COMPONENTES DEL JSON =================
 
-def cargar_frases_json(json_path="features.json"):
+def cargar_frases_json(json_path="data/processed/features.json"):
     """
     Carga y extrae frases reales del JSON para enriquecer los reportes
     """

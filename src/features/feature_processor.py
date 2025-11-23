@@ -10,7 +10,7 @@ model = SentenceTransformer('xlm-roberta-base')
 
 # 2. Cargar datos del archivo JSON
 print("Cargando features.json...")
-with open('features.json', 'r', encoding='utf-8') as f:
+with open('data/processed/features.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # 3. Procesar datos y generar embeddings
@@ -50,7 +50,7 @@ print("Convirtiendo datos a DataFrame...")
 df = pd.DataFrame(processed_data)
 
 # 5. Guardar en un archivo CSV
-output_filename = 'features_embeddings.csv'
+output_filename = 'data/processed/features_embeddings.csv'
 print(f"Guardando datos en {output_filename}...")
 df.to_csv(output_filename, index=False, encoding='utf-8')
 

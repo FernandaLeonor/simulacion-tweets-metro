@@ -6,7 +6,7 @@ from datetime import datetime
 from sentence_transformers import SentenceTransformer
 from catboost import CatBoostClassifier
 # Importar tu generador mejorado
-from generador_tweets_realistas import generar_tweet_simulado 
+from src.data_generation.realistic_tweet_generator import generar_tweet_simulado 
 
 # ================= CONFIG =================
 INTERVALO = 5  # Más rápido para ver las alertas (5 segundos)
@@ -37,7 +37,7 @@ estatus_estaciones = {est: get_initial_probs() for est in estaciones_L1}
 # ================= CARGAR MODELOS =================
 print("Cargando cerebro...")
 model_cb = CatBoostClassifier()
-model_cb.load_model("modelo_deteccion_falla.cbm") # Usar el modelo de detección de falla
+model_cb.load_model("models/modelo_deteccion_falla.cbm") # Usar el modelo de detección de falla
 embed_model = SentenceTransformer('xlm-roberta-base')
 print("✅ Sistemas listos. Iniciando monitoreo...")
 

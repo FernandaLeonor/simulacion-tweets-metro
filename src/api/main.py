@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 from catboost import CatBoostClassifier
 import json
 import pandas as pd
-from generador_tweets_realistas import generar_tweet_simulado
+from src.data_generation.realistic_tweet_generator import generar_tweet_simulado
 
 # ================= MODELOS PYDANTIC =================
 class EstacionEstado(BaseModel):
@@ -103,7 +103,7 @@ async def load_models():
 
     # Cargar modelo CatBoost
     model_cb = CatBoostClassifier()
-    model_cb.load_model("modelo_clasificacion_falla.cbm")
+    model_cb.load_model("models/modelo_clasificacion_falla.cbm")
     print("✅ Modelo CatBoost cargado")
 
     # Cargar modelo de embeddings
@@ -112,12 +112,12 @@ async def load_models():
 
     # Cargar mapeo de etiquetas
     try:
-        with open('label_encoding.json', 'r', encoding='utf-8') as f:
+        with open('data/processed/label_encoding.json', 'r', encoding='utf-8') as f:
             label_mapping_raw = json.load(f)
         label_mapping = {int(k): v for k, v in label_mapping_raw.items()}
         print(f"✅ Mapeo de etiquetas cargado: {label_mapping}")
     except FileNotFoundError:
-        print("❌ Error: No se encontró 'label_encoding.json'")
+        print("❌ Error: No se encontró 'data/processed/label_encoding.json'")
         raise
 
     # Inicializar estado de estaciones
