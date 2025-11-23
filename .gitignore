@@ -1,0 +1,24 @@
+# Archivos de Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+*.env
+
+# Archivos de datos y modelos
+datos_entrenamiento.json
+modelo_final.cbm
+catboost_info/
+
+# Archivos temporales o de logs
+*.log
+*.tmp
+*.json  # si hay logs generados por tu script y no quieres subirlos
+
+# Carpeta de cache de Sentence Transformers / HuggingFace
+.cache/
