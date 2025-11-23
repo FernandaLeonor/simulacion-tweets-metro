@@ -18,15 +18,16 @@ venv/
 *.swo
 *~
 
-# Modelos entrenados (grandes archivos binarios)
-models/*.cbm
-models/*.pkl
-models/*.h5
+# Modelos entrenados - NO IGNORAR (necesarios para producción)
+# models/*.cbm
+# models/*.pkl
+# models/*.h5
 
-# Datos procesados (pueden ser regenerados)
+# Datos procesados - NO IGNORAR label_encoding.json (necesario para producción)
 data/raw/
 data/processed/*.csv
-data/processed/*.json
+# Mantener label_encoding.json para producción
+!data/processed/label_encoding.json
 
 # Logs y archivos temporales
 logs/*.log

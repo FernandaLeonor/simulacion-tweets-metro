@@ -8,7 +8,21 @@ from sentence_transformers import SentenceTransformer
 from catboost import CatBoostClassifier
 import json
 import pandas as pd
+import os
+from pathlib import Path
 from src.data_generation.realistic_tweet_generator import generar_tweet_simulado
+
+# ================= PATH CONFIGURATION =================
+# Get the project root directory (two levels up from this file)
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+def get_env(key: str, default: str = None) -> str:
+    """Get environment variable with fallback to default"""
+    return os.getenv(key, default)
+
+def get_abs_path(relative_path: str) -> Path:
+    """Convert relative path to absolute path based on project root"""
+    return BASE_DIR / relative_path
 
 # ================= MODELOS PYDANTIC =================
 class EstacionEstado(BaseModel):
@@ -42,8 +56,21 @@ class IteracionResponse(BaseModel):
     numero_tweets: int
 
 # ================= CONFIG =================
-UMBRAL_ALERTA = 80.0  # % para activar alarma
-N_TWEETS = (1, 3)
+# Configuration from environment variables with defaults
+PORT = int(get_env("PORT", "8000"))
+HOST = get_env("HOST", "0.0.0.0")
+ALLOWED_ORIGINS = get_env("ALLOWED_ORIGINS", "*").split(",")
+UMBRAL_ALERTA = float(get_env("UMBRAL_ALERTA", "80.0"))
+N_TWEETS = (
+    int(get_env("MIN_TWEETS_PER_ITERATION", "1")),
+    int(get_env("MAX_TWEETS_PER_ITERATION", "3"))
+)
+EMBEDDING_MODEL_NAME = get_env("EMBEDDING_MODEL", "xlm-roberta-base")
+
+# Model and data paths
+MODEL_CLASIFICACION_PATH = get_abs_path(get_env("MODEL_CLASIFICACION_PATH", "models/modelo_clasificacion_falla.cbm"))
+MODEL_DETECCION_PATH = get_abs_path(get_env("MODEL_DETECCION_PATH", "models/modelo_deteccion_falla.cbm"))
+LABEL_ENCODING_PATH = get_abs_path(get_env("LABEL_ENCODING_PATH", "data/processed/label_encoding.json"))
 
 estaciones_L1 = [
     "Observatorio", "Tacubaya", "Juanacatlán", "Chapultepec", "Sevilla",
@@ -62,7 +89,7 @@ app = FastAPI(
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -99,31 +126,39 @@ async def load_models():
     global model_cb, embed_model, label_mapping
 
     print("🚀 Iniciando API...")
+    print(f"📁 Directorio base: {BASE_DIR}")
     print("📦 Cargando modelos...")
 
     # Cargar modelo CatBoost
     model_cb = CatBoostClassifier()
-    model_cb.load_model("models/modelo_clasificacion_falla.cbm")
+    print(f"📂 Cargando modelo desde: {MODEL_CLASIFICACION_PATH}")
+    if not MODEL_CLASIFICACION_PATH.exists():
+        raise FileNotFoundError(f"No se encontró el modelo en: {MODEL_CLASIFICACION_PATH}")
+    model_cb.load_model(str(MODEL_CLASIFICACION_PATH))
     print("✅ Modelo CatBoost cargado")
 
     # Cargar modelo de embeddings
-    embed_model = SentenceTransformer('xlm-roberta-base')
+    print(f"📂 Cargando modelo de embeddings: {EMBEDDING_MODEL_NAME}")
+    embed_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     print("✅ Modelo de embeddings cargado")
 
     # Cargar mapeo de etiquetas
     try:
-        with open('data/processed/label_encoding.json', 'r', encoding='utf-8') as f:
+        print(f"📂 Cargando mapeo de etiquetas desde: {LABEL_ENCODING_PATH}")
+        if not LABEL_ENCODING_PATH.exists():
+            raise FileNotFoundError(f"No se encontró el archivo en: {LABEL_ENCODING_PATH}")
+        with open(LABEL_ENCODING_PATH, 'r', encoding='utf-8') as f:
             label_mapping_raw = json.load(f)
         label_mapping = {int(k): v for k, v in label_mapping_raw.items()}
         print(f"✅ Mapeo de etiquetas cargado: {label_mapping}")
-    except FileNotFoundError:
-        print("❌ Error: No se encontró 'data/processed/label_encoding.json'")
+    except FileNotFoundError as e:
+        print(f"❌ Error: {e}")
         raise
 
     # Inicializar estado de estaciones
     inicializar_estaciones()
     print("✅ Estado de estaciones inicializado")
-    print("🎉 API lista para recibir peticiones!")
+    print(f"🎉 API lista para recibir peticiones en {HOST}:{PORT}!")
 
 # ================= ENDPOINTS =================
 @app.get("/")
@@ -132,11 +167,24 @@ async def root():
     return {
         "message": "API Simulación Metro CDMX - Línea 1",
         "version": "1.0.0",
+        "environment": get_env("ENVIRONMENT", "development"),
         "endpoints": {
+            "/": "Información de la API",
+            "/health": "Health check endpoint",
             "/iteracion": "Ejecuta una iteración de la simulación",
             "/estado": "Obtiene el estado actual de todas las estaciones",
             "/reset": "Reinicia el estado de todas las estaciones"
         }
+    }
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint para monitoreo"""
+    return {
+        "status": "healthy",
+        "timestamp": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        "models_loaded": model_cb is not None and embed_model is not None,
+        "stations_initialized": len(estatus_estaciones) > 0
     }
 
 @app.get("/iteracion", response_model=IteracionResponse)
@@ -316,4 +364,4 @@ async def reiniciar_estado():
 # ================= EJECUCIÓN =================
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host=HOST, port=PORT)
