@@ -1,0 +1,1882 @@
+[
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios reportan saturación severa, con filas extensas para entrar, empujones y conflictos, describiendo la estación como 'imposible', 'un mar de gente' y 'a reventar' por la afluencia. La operación del tren presenta problemas como unidades paradas o sin avance, frenazos bruscos, incidentes de palanca de emergencia activada, y la Línea 1 operando lentísima con luces de vagón parpadeantes. Fallas en la infraestructura incluyen una escalera eléctrica detenida y filtraciones de agua ('cascadas') en las escaleras dentro de la estación, además del monitoreo de cárcamos que muestra niveles de agua subiendo. El confort se ve afectado por la falta de aire acondicionado, sensación de asfixia y un fuerte olor a humedad. El clima presenta condiciones de lluvia moderada y llovizna ligera, con hasta 3mm de precipitación, lo que llevó a la activación de la marcha de seguridad en varias líneas del metro. En superficie, la Av. Chapultepec registra tráfico pesado (nivel 5) y accidentes vehiculares debido a lluvia, hora pico y salida de oficinas. La afluencia se ve impactada por eventos cercanos como Concierto Auditorio Nacional, Función Teatro, Partido Futbol y Salida Corporativos. La calidad del aire muestra PM10 en estado 'Moderate' y PM2.5 en estado 'Moderate'. La estación Ecobici cercana reporta 0 bicicletas disponibles.",
+      "features_numericas_promedio": {
+        "temp": 16.6,
+        "humidity": 84,
+        "precip_mm": 1.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "En la estación Balderas, se reporta un incidente de seguridad con un robo ('bolsearon') a una usuaria en medio del tumulto para ingresar al metro.",
+      "features_numericas_promedio": {
+        "temp": 16.6,
+        "humidity": 84,
+        "precip_mm": 1.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 2,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios extensivamente reportan una saturación severa en la Línea 1 en Cuauhtémoc, exigiendo más trenes ya que la estación es descrita como llena, provocando la detención de una escalera eléctrica por exceso de carga. Esta congestión se alinea con un tráfico vehicular pesado en la Av. Chapultepec, causado por la salida de un evento de concierto mayor que impacta la zona. Las condiciones climáticas locales incluyen neblina, nubes y lluvia ligera con temperaturas alrededor de 15-16°C, mientras que la calidad del aire oscila de moderada a buena para PM10 y PM2.5. Se registró una alerta de seguridad por una persona sospechosa, aunque también se observaron rondines policiales en los andenes. A pesar de que algunos usuarios reportan una Línea 1 tranquila, la retroalimentación dominante indica desafíos operativos significativos y preocupaciones de seguridad debido al alto volumen de pasajeros.",
+      "features_numericas_promedio": {
+        "temp": 15.8,
+        "humidity": 85.5,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 2,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "La estación San Lázaro presenta una saturación crítica de usuarios, descrita como \"llenísima de gente\", directamente atribuible a la salida de un evento masivo en el Foro Sol, lo que genera una alta afluencia en la Línea 1. Las condiciones climáticas generales en la ciudad incluyen neblina y lluvias ligeras, con temperaturas frescas. Aunque no se reportan problemas de tráfico específicos en su ubicación inmediata, el evento que causa la congestión en San Lázaro también provocó tráfico pesado en segmentos de la Línea 1 como Cuauhtémoc, sugiriendo un impacto más amplio en la operación del metro y la movilidad urbana general.",
+      "features_numericas_promedio": {
+        "temp": 15.8,
+        "humidity": 85.5,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios de la estación Cuauhtémoc y la Línea 1 enfrentan diversas problemáticas operativas y de convivencia. Se reportó la detención de un tren directamente en Cuauhtémoc por el uso de la palanca de emergencia, sumado a quejas sobre luces parpadeantes en vagones, ruidos inusuales en el túnel, suciedad en unidades y una gotera en el pasillo de transbordo. La situación de seguridad se ve afectada por un incidente de un señor ebrio molestando a los pasajeros. A pesar de observaciones aisladas de un servicio rápido en la Línea 1, la operatividad general presenta desafíos. El contexto externo muestra un tráfico vehicular normal en Avenida Chapultepec, con un clima despejado, sin precipitaciones y buena calidad del aire, aunque eventos culturales de bajo impacto en la zona podrían influir en el flujo de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 15.3,
+        "humidity": 81.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 4,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En la estación Cuauhtémoc de la Línea 1, un usuario expresa preocupación por alcanzar el último tren, coincidiendo con el próximo cierre del servicio a las 24:00 horas y el cierre previo de taquillas. Durante la noche, se observa una afluencia baja de pasajeros en la Línea 1, con reportes que la describen como \"vacía\" o \"sola\". Sin embargo, otros usuarios mencionan sentir calor en los vagones. Se han registrado quejas sobre la oscuridad en el túnel de la L1 y luces parpadeantes, lo que genera inquietud por la seguridad. Operativamente, se realiza recolección de basura en la avenida Cuauhtémoc y técnicos revisan torniquetes. El tráfico en Av. Chapultepec, cercana a la estación, es normal con nivel de congestión 2. La calidad del aire en Cuauhtémoc es buena (AQI 40). El clima general de la ciudad es fresco (13.5-14.0°C), con cielos mayormente despejados a parcialmente nublados y sin precipitaciones.",
+      "features_numericas_promedio": {
+        "temp": 13.8,
+        "humidity": 82.5,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios en la Línea 1, con la estación Cuauhtémoc como punto de referencia, reportan varios incidentes a altas horas de la noche. Se menciona la presencia de grupos ruidosos como borrachos en vagones, así como grafiteros. También hay quejas por vagones oscuros y la detección de olor a cigarro. Un usuario describe el esfuerzo de subir las escaleras de la estación a medianoche, mientras otros expresan inquietud por la soledad o la percepción de ser seguidos en el transbordo, buscando refugio en un Oxxo cercano. Se reporta la presencia de un perrito durmiendo en la estación. El contexto operativo incluye cierres de accesos secundarios y un operativo alcoholímetro en Avenida Cuauhtémoc. Se coordina el cierre de la estación y la preparación de cuadrillas de limpieza. El tráfico en Avenida Chapultepec, cercana a la estación, presenta niveles normales aunque con obras nocturnas que reducen la velocidad a 40 km/h en algunos segmentos. La calidad del aire es moderada por PM10 y buena por PM2.5. Las condiciones climáticas muestran neblina ligera y cielo nublado, con temperaturas rondando los 14°C. A pesar de los incidentes, algunos usuarios de Línea 1 reportan viajes rápidos debido a los vagones vacíos. El servicio de Ecobici en las cercanías de la estación Cuauhtémoc se mantiene operativo.",
+      "features_numericas_promedio": {
+        "temp": 13.1,
+        "humidity": 80.5,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "La estación Salto del Agua se encuentra afectada por un cierre parcial de la Línea 1. Este evento, clasificado como mantenimiento, tiene un alto nivel de impacto, lo que sugiere interrupciones significativas para los usuarios que transiten por esta zona.",
+      "features_numericas_promedio": {
+        "temp": 13.1,
+        "humidity": 80.5,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "La estación Balderas, al igual que Salto del Agua, enfrenta un cierre parcial de la Línea 1 debido a trabajos de mantenimiento. Este operativo se ha identificado con un alto nivel de impacto, lo que indica posibles afectaciones o necesidad de desvíos para los pasajeros.",
+      "features_numericas_promedio": {
+        "temp": 13.1,
+        "humidity": 80.5,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios en Cuauhtémoc reportan restricciones de acceso antes del cierre, la presencia de una rata en las vías y ruido generado por obras. El contexto externo muestra congestión en Av. Chapultepec debido a bacheo, pintura de carriles, descarga de mercancía y un accidente vehicular por exceso de velocidad. En el ámbito operativo interno, se realizaron labores de limpieza de drenaje en el túnel, inspección de vías y se inició la energización de rieles para el servicio, detectándose filtraciones en el túnel de L1. La calidad del aire es 'Buena' (PM10, PM2.5, NO2), con temperaturas bajas (entre 7 y 12.5°C) y episodios de niebla en la zona. Se observa a usuarios haciendo fila para el primer tren del día.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Chabacano",
+      "resumen_para_roberta": "En Chabacano, se realizaron labores programadas de limpieza de estaciones y se completó una inspección de catenaria.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Jamaica",
+      "resumen_para_roberta": "La estación Jamaica tiene programadas labores de limpieza como parte del mantenimiento rutinario.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Polanco",
+      "resumen_para_roberta": "En Polanco, se están realizando trabajos de lavado profundo en los túneles como parte del mantenimiento.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Auditorio",
+      "resumen_para_roberta": "La estación Auditorio se ve afectada por un lavado profundo de túneles que actualmente está en progreso.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Tasqueña",
+      "resumen_para_roberta": "Por Tasqueña se reporta el ingreso de una dresina a la Línea 1, indicando actividades de inspección de vías.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Ticomán",
+      "resumen_para_roberta": "Se recibió un reporte de humo en el Taller Ticomán, aunque la situación fue controlada rápidamente.",
+      "features_numericas_promedio": {
+        "temp": 9.2,
+        "humidity": 90.2,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "La estación Cuauhtémoc de la Línea 1 experimentó una mañana complicada, con largas filas antes de la apertura oficial y usuarios reportando caos y saturación severa en los primeros trenes, solicitando unidades vacías. Se registraron problemas operativos como escaleras detenidas y apagadas, fallas en la iluminación de los andenes y un tren detenido por una mochila atorada en las puertas, lo que generó retrasos. El avance de los trenes en la curva de Cuauhtémoc fue con precaución. El clima se mantuvo despejado con temperaturas frescas (7-9°C), aunque se percibió un fuerte olor a humedad en el túnel y hubo quejas por el aire acondicionado encendido. En superficie, la Av. Chapultepec enfrentó un incremento del tráfico de ligero a pesado, con incidentes como un accidente vehicular que redujo la velocidad a 20 km/h y obras de mantenimiento, impactando el contexto de la zona. La calidad del aire se mantuvo generalmente buena, con un pico moderado de PM10. Además, se reportó la presencia de un gatito en las vías y la atención de paramédicos a una persona que tropezó en las escaleras, sumando a la dinámica operativa de la estación.",
+      "features_numericas_promedio": {
+        "temp": 8.6,
+        "humidity": 88.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Constitución",
+      "resumen_para_roberta": "La estación Constitución inició el día con quejas de usuarios debido a que la reja no abría a las 5:05 AM, obligando a los pasajeros a esperar en fila bajo un ambiente frío de la madrugada. No se dispone de datos específicos de clima o tráfico para esta estación en el lote, pero se infiere que las condiciones de temperatura fría generalizadas en la ciudad pudieron contribuir a la molestia de la espera de los usuarios.",
+      "features_numericas_promedio": {
+        "temp": 8.6,
+        "humidity": 88.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Muzquiz",
+      "resumen_para_roberta": "En las inmediaciones del Metro Muzquiz, se alertó sobre la quema de basura en un lote baldío, lo que representa un riesgo ambiental y una preocupación de seguridad en la zona circundante a la estación. No se identificaron reportes directos sobre la operación del Metro, el clima o el tráfico específicamente relacionados con esta estación en el lote de datos analizado.",
+      "features_numericas_promedio": {
+        "temp": 8.6,
+        "humidity": 88.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios de la Línea 1 en Cuauhtémoc reportan un frenón brusco, fuertes rechinidos en las vías y presencia de basura, además de esperas de hasta 10 minutos. La calidad del aire se mantiene moderada por PM10. El tráfico en superficie cercano a la estación (Av. Chapultepec) presenta un nivel normal. El clima registra cielos parcialmente nublados con una temperatura de 15.0°C, tornándose soleado más tarde con temperaturas de 25.2°C, sin precipitación relevante en la zona.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya L1 se encuentra en un estado crítico, con usuarios reportando saturación extrema, empujones, imposibilidad de transbordar y filas interminables. El calor es sofocante en andenes y trenes, causando un desmayo en el andén, sumado a la falta de ventilación y efectos de 'invernadero' en tramos elevados. Se registran múltiples incidentes operativos: frenados de emergencia, trenes detenidos a oscuras por fallas de tracción, reportes de humo blanco y olor a quemado (incluso explosiones y chispazos por un globo metálico), y unidades circulando con puertas obstruidas o abiertas. Las escaleras eléctricas están fuera de servicio, las máquinas de recarga fallan y la presencia de vendedores ambulantes obstruye el paso. La seguridad es preocupante con robos y riñas, y la policía interviene para desalojar vagoneros. Objetos como una muleta o un perro en vías provocan detenciones. Adicionalmente, se reportan fugas de agua y un hundimiento en las vías que exige reducción de velocidad. La calidad del aire es consistentemente dañina por PM10, PM2.5 y Ozono. El tráfico en superficie (Parque Lira) es sumamente pesado debido a accidentes, obras inconclusas, manifestantes y lluvia moderada, todo esto en un contexto de hora pico con capacidad máxima del sistema. La Línea B también presenta retrasos.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Se ha reportado un incidente de seguridad en Pino Suárez, donde una usuaria fue víctima de un robo (bolsazo) en medio de la aglomeración y los empujones en los andenes de la Línea 1.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios de la Línea 1 reportan esperas de hasta 15 minutos en la estación Observatorio, indicando una notable falta de trenes para salir y generando retrasos en el servicio.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Taxqueña",
+      "resumen_para_roberta": "Usuarios de la Línea 1 en Taxqueña reportan un servicio extremadamente lento, con trenes avanzando a 'paso de tortuga', coincidiendo con el inicio de una lluvia moderada en la zona. Un evento de tormenta ligera con 2.5mm de precipitación y vientos de 8.0 km/h en la alcaldía Coyoacán, donde se ubica la estación, sugiere afectaciones por las condiciones climáticas.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Polanco",
+      "resumen_para_roberta": "La estación Polanco se ve afectada por un mantenimiento en las escaleras de la Línea 1. Este proceso se encuentra en curso y podría generar inconvenientes para los usuarios al acceder o salir de la estación.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Auditorio",
+      "resumen_para_roberta": "La estación Auditorio está bajo mantenimiento en las escaleras de la Línea 1. Esta situación se encuentra en curso y puede impactar la movilidad de los pasajeros, causando posibles demoras o incomodidades.",
+      "features_numericas_promedio": {
+        "temp": 19.6,
+        "humidity": 51.4,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 9,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya enfrenta un colapso operativo severo debido a lluvias intensas y tormentas, registrando hasta 15mm de precipitación, lo que coincide con la hora pico vespertina y la salida de oficinas/universidades, además de eventos masivos cercanos. Usuarios reportan que el agua se filtra dentro de los vagones con ventanas abiertas y al interior de la estación, describiendo pasillos y accesos como 'albercas' con agua a los tobillos y techos goteando, causando pisos mojados y resbalones en escaleras y andenes. Se detectan fallas en la bomba del cárcamo, agua cubriendo las vías, chispazos, y reblandecimiento del terreno, provocando la activación de la marcha de seguridad y la suspensión del servicio, con trenes detenidos y avance extremadamente lento (hasta 30 minutos entre estaciones en L1), sumado a fallas en puertas y limpiaparabrisas. La congestión es crítica, con quejas de 'estampidas humanas', empujones, accesos cerrados con dosificación de usuarios y largas filas. También se registran luces parpadeantes, falta de iluminación en andenes por la noche, generando problemas de seguridad, incluyendo un usuario caído a las vías, riñas, acoso y robo. Adicionalmente, se menciona humo en la estación, olores a humedad y drenaje, y afectaciones en el tráfico superficial de Parque Lira por inundaciones y accidentes, impactando también el Metrobús y Cablebús.",
+      "features_numericas_promedio": {
+        "temp": 16.4,
+        "humidity": 83.2,
+        "precip_mm": 4.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan un ambiente problemático en Tacubaya, incluyendo olores a marihuana, vomito en pasillos y la presencia de una rata gigante en las vías. Se quejan de cierres anticipados de la estación, retrasos en la apertura con filas enormes, trenes saturados incluso a las 5:30 am, y puertas de vagón que no cierran por el frío. También mencionan escaleras eléctricas apagadas y el Nochebús saltando paradas. La seguridad es una preocupación por operativos mochila segura, robos de cable, y carteristas al transbordar, además de una mochila caída a las vías y un olor a gas. Actividades operativas incluyen soldadura de rieles, presencia de grafiteros, rondines de vigilancia en los talleres, limpieza de andenes, y el inicio del servicio con operativos de agilización. El tráfico vehicular cercano presenta niveles de congestión moderados a altos (jam_level 1-4) con obras, accidentes y la entrada de autobuses foráneos impactando la zona. Se registra una calidad del aire predominantemente buena (AQI 30-65 PM2.5/PM10).",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "En la terminal Pantitlán, el personal de seguridad fue visto desalojando a personas que dormían dentro de los vagones al finalizar el servicio. No se registraron quejas de usuarios ni incidentes operativos adicionales directamente relacionados con la infraestructura o el servicio de Metro en la estación.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Chabacano",
+      "resumen_para_roberta": "Para la estación Chabacano se programó una limpieza general como parte de las labores de mantenimiento rutinario. Adicionalmente, se completaron inspecciones de catenaria en los tramos que afectan a esta estación. No se reportan incidentes directos o quejas de usuarios en esta estación durante el período analizado.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Jamaica",
+      "resumen_para_roberta": "La estación Jamaica tiene programada una limpieza general de sus instalaciones como parte de las actividades de mantenimiento. También se completaron inspecciones de catenaria en los tramos relevantes. No se han registrado quejas de usuarios ni eventos operativos específicos que afecten directamente la estación.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Usuarios en Moctezuma reportan una espera excesiva para los trenes de la Línea 1, donde el tablero de información indicaba una espera de solo 2 minutos, pero la demora real para la llegada del tren fue de 10 minutos, causando frustración.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Polanco",
+      "resumen_para_roberta": "Se está llevando a cabo un lavado profundo de túnel en los tramos que impactan a la estación Polanco como parte de las labores de mantenimiento nocturno. No se registraron quejas ni afectaciones directas a los usuarios durante este periodo.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Auditorio",
+      "resumen_para_roberta": "La estación Auditorio se encuentra dentro del área donde se realiza un lavado profundo de túnel como parte de las tareas de mantenimiento nocturno. No se han recibido reportes de quejas o incidentes por parte de los usuarios directamente relacionados con la estación.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Tasqueña",
+      "resumen_para_roberta": "En la terminal Tasqueña, se registró el ingreso de una dresina a la Línea 1 para labores de inspección de vía durante la madrugada. Además, se completó la revisión de los aparatos de cambio de vía sin ninguna novedad reportada.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Ticomán",
+      "resumen_para_roberta": "En los Talleres Ticomán, se reportó la entrada de personal de limpieza para iniciar su turno nocturno. Esta actividad se relaciona con el mantenimiento operativo de las instalaciones del Metro, no hay quejas de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "La zona de Cuauhtémoc, donde se ubica la estación de Metro homónima, experimentó condiciones climáticas variables, desde niebla con 11.5°C y alta humedad hasta cielos despejados con temperaturas frescas entre 7°C y 8.5°C. También se detectó un sismo leve de magnitud 3.8 en el área. No se reportan incidentes operativos ni quejas de usuarios directamente relacionadas con la estación del Metro.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.2,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya (Línea 1, con menciones de afectaciones generales de transbordo) enfrenta un colapso operativo durante la hora pico. Usuarios reportan detenciones prolongadas de trenes de hasta 20 minutos, frenones bruscos y saturación extrema, con filas que exceden los torniquetes, bloqueo de puertas por aglomeración y escaleras mecánicas fuera de servicio o inoperantes para el transbordo. Se detectaron fallas técnicas como variación de tensión en catenaria y pérdida de presión neumática en trenes L1, con semáforos en rojo preventivo. Incidentes como un globo metálico y basura en vías provocaron corto circuito y humo, sumado a reportes de olor a quemado y desalojos. La seguridad preocupa por riñas entre usuarios, personas gritando en vagones, una persona de la tercera edad caída en escaleras y un desmayo en andén, posiblemente por el calor, exacerbado por el aire acondicionado inoperante en trenes. La calidad del aire en la zona es moderada a insalubre (AQI 88-100 PM10/PM2.5). El tráfico pesado (nivel 4-5) y accidentes en Parque Lira, junto con eventos de hora pico y bloqueos cercanos al CETRAM Tacubaya, intensifican la afluencia y presión sobre el sistema. La estación de Ecobici cercana se encuentra vacía.",
+      "features_numericas_promedio": {
+        "temp": 13.9,
+        "humidity": 59.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Oceanía",
+      "resumen_para_roberta": "En la estación Oceanía, usuarios de MetroCDMX reportan una significativa filtración de agua desde el techo, indicando que 'está lloviendo adentro de la estación' y solicitando la reparación urgente de las instalaciones. No se observan otras incidencias operativas o contextuales detalladas para esta estación en el lote de datos analizado.",
+      "features_numericas_promedio": {
+        "temp": 13.9,
+        "humidity": 59.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Viveros",
+      "resumen_para_roberta": "La estación Viveros de la Línea 1 se ve afectada por un mantenimiento en curso de las escaleras mecánicas, lo que tiene un impacto clasificado como medio. No se encontraron otras quejas o contextuales específicos para esta estación en los datos disponibles.",
+      "features_numericas_promedio": {
+        "temp": 13.9,
+        "humidity": 59.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Coyoacán",
+      "resumen_para_roberta": "La estación Coyoacán de la Línea 1 es impactada por un mantenimiento en curso de las escaleras mecánicas, clasificado con un nivel de impacto medio. Este mantenimiento podría generar inconvenientes para el tránsito de los usuarios. No se detectaron otras incidencias o contextos particulares para esta estación en el lote de datos.",
+      "features_numericas_promedio": {
+        "temp": 13.9,
+        "humidity": 59.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Muzquiz",
+      "resumen_para_roberta": "Se reporta un bloqueo en ambos sentidos de Av. Central a la altura de Metro Muzquiz, según alertas viales. Esta situación está generando importantes afectaciones al tráfico en la zona circundante a la estación.",
+      "features_numericas_promedio": {
+        "temp": 20.2,
+        "humidity": 40,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Nezahualcóyotl",
+      "resumen_para_roberta": "Se emite una alerta por un perro corriendo en las vías de la Línea 1, cerca de la estación Nezahualcóyotl. Esta situación representa un riesgo tanto para el animal como para la operación del servicio de Metro, con potencial de causar detenciones.",
+      "features_numericas_promedio": {
+        "temp": 20.2,
+        "humidity": 40,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios de la Línea 1 en Tacubaya reportan saturación severa en los vagones, 'llenos a reventar', y detenciones prolongadas de hasta 15 minutos, incluyendo paradas en túneles con apagones de luces que generan angustia y claustrofobia. Las quejas se extienden a la falta de ventilación y aire acondicionado, resultando en calor insoportable y olores desagradables, así como fallas en la megafonía y puertas de vagones trabadas. También se registran incidentes de seguridad como robos de celular por empujones, riñas por asientos reservados con intervención policial, vendedores ambulantes agresivos y un objeto (bastón) en las vías que detuvo el tren. Se detecta olor a balatas quemadas y humo, junto con problemas de limpieza por basura y derrames. En el entorno de la estación, el tráfico vehicular en Parque Lira es pesado por semáforos descompuestos, una marcha con protesta y un camión de carga averiado, mientras que la calidad del aire oscila entre moderada y no saludable para grupos sensibles. Operativamente, hay un 'Operativo Dosificación' de alto impacto y un bloqueo por protesta de la CNTE en el CETRAM. A pesar de estas incidencias, algunos usuarios ocasionalmente reportan fluidez en la Línea 1.",
+      "features_numericas_promedio": {
+        "temp": 20.2,
+        "humidity": 40,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 13,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya presenta un panorama complejo y múltiples incidentes. Usuarios reportan desalojos de vagones en la Línea 1 por olor a gas pimienta y plástico quemado, así como ozono y chispazos en el pantógrafo del tren, provocando toses y desmayos. Se suman quejas por demoras con trenes parados por 10 minutos, problemas de infraestructura como luces parpadeantes en el túnel, puertas que no abren, escaleras mecánicas apagadas, alumbrado deficiente por disparo de pastilla térmica y goteras en el andén. El transbordo es percibido como 'eterno' y se reportan torniquetes atascados. Además, se avistaron perros en el andén y vías de la Línea B. Este contexto operativo se desarrolla bajo un clima cálido y soleado (temperaturas entre 24-29°C) con un índice UV de muy alto a extremo. La calidad del aire es 'insalubre para grupos sensibles' debido al ozono. El tráfico en superficie cercano, en Parque Lira, muestra niveles normales con afectaciones puntuales por protestas y obras viales. Eventos como una feria de empleo, manifestaciones, visitas guiadas y mantenimiento de luminarias en el CETRAM, sumado a una estación Ecobici cercana sin slots disponibles, contribuyen a la afluencia y presión en la zona.",
+      "features_numericas_promedio": {
+        "temp": 26.9,
+        "humidity": 21.6,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 13,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "En la estación Insurgentes se reporta una reparación de validador de tarjeta en el torniquete número 5. Las condiciones climáticas generales durante este periodo son cálidas y soleadas, con temperaturas entre los 24 y 29°C y un índice de radiación UV considerado muy alto a extremo, sin precipitación registrada.",
+      "features_numericas_promedio": {
+        "temp": 26.9,
+        "humidity": 21.6,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 13,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "La estación Balderas fue escenario de un incidente entre usuarios, con dos personas involucradas en una pelea por un asiento en el vagón. Las condiciones climáticas generales son de una jornada cálida y soleada, con temperaturas rondando los 24-29°C y un índice de radiación UV de muy alto a extremo en la ciudad.",
+      "features_numericas_promedio": {
+        "temp": 26.9,
+        "humidity": 21.6,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 14,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya, en la Línea 1, experimenta una jornada operativa compleja. Usuarios reportan múltiples detenciones del servicio, con esperas de hasta 20 minutos y avances muy lentos en el tramo subterráneo, en parte atribuidos a la implementación de una marcha de seguridad. El ambiente en los vagones es sofocante debido a una ola de calor que lleva las temperaturas hasta los 30°C, provocando quejas por la falta de aire acondicionado en algunas unidades y una ligera deformación de las vías superficiales. Se detecta humo y olor a quemado, tanto en vagones como proveniente de las llantas de los trenes en la estación. Las instalaciones presentan problemas como botes de basura desbordados y filtraciones que forman cascadas en las escaleras. Incidentes adicionales incluyen una escalera eléctrica detenida por objetos atascados, la expulsión de un vendedor ambulante agresivo y una confrontación entre estudiantes en el andén. La calidad del aire en la zona es preocupante, clasificada como 'No saludable para grupos sensibles' por altos niveles de ozono. En superficie, el área del CETRAM Tacubaya y Parque Lira sufre de tráfico pesado (nivel 4), con velocidades reducidas a 15-20 km/h, exacerbado por la salida de escuelas y, en ciertos momentos, por lluvia moderada (hasta 3.5mm) que crea charcos en las vías. Se tiene prevista una manifestación de alto impacto en el CETRAM.",
+      "features_numericas_promedio": {
+        "temp": 25.8,
+        "humidity": 41.2,
+        "precip_mm": 1.6,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 14,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Barranca del Muerto",
+      "resumen_para_roberta": "En la estación Barranca del Muerto de la Línea 1, se realizó una inspección técnica de las agujas en el cambio de vía, confirmándose su correcto funcionamiento. No se reportan incidentes, quejas de usuarios o afectaciones operativas significativas directamente relacionadas con esta estación en el lote de datos analizado, más allá del contexto general de calor y posibles lluvias dispersas en la ciudad.",
+      "features_numericas_promedio": {
+        "temp": 25.8,
+        "humidity": 41.2,
+        "precip_mm": 1.6,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 15,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan que la estación Tacubaya está sufriendo inundaciones severas tanto en el exterior, dificultando el acceso, como en el interior, con escaleras y andenes mojados que han causado resbalones y caídas, requiriendo atención de paramédicos. Se observan filtraciones y goteos de agua dentro de los vagones de la Línea 1 a través de techos y ventanas, con reportes de saturación extrema e imposibilidad para subir. La zona de Tacubaya también se reporta a punto de desbordarse, con un árbol caído obstruyendo la entrada del metro. El tráfico superficial en Parque Lira, cercano a la estación, está en nivel crítico (jam level 5) por encharcamientos profundos e inundaciones bajo puentes, afectando la movilidad. La operación del Metro se ve comprometida con detenciones y avance lento en Línea 1, atribuidos a la acumulación de agua en vías y patinaje de trenes. Una alarma de alto nivel en el cárcamo de bombeo de la interestación Tacubaya-Tacubaya indica una respuesta crítica a la gestión del agua. Las condiciones climáticas incluyen niebla y lluvias moderadas a fuertes (4-5mm) con alta humedad y vientos, y la red opera bajo un 'Operativo Lluvia' con marcha de seguridad. La calidad del aire es moderada.",
+      "features_numericas_promedio": {
+        "temp": 18.5,
+        "humidity": 86.9,
+        "precip_mm": 9.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 15,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "La estación Zaragoza se encuentra en una situación crítica debido a las fuertes lluvias y granizo, con quejas de lodo en andenes, cascadas en las escaleras y pasillos convertidos en \"albercas\" por la acumulación de agua, lo que ha provocado caídas de usuarios. La Línea 1 ha sido detenida en Zaragoza por la presencia de agua en las vías. En el exterior, la Calzada Ignacio Zaragoza registra inundaciones de carriles centrales y encharcamientos que causan tráfico pesado (jam level 4-5) y accidentes múltiples por el piso mojado. Una descarga atmosférica cercana impactó una subestación eléctrica, aunque sin mayores afectaciones al sistema. Las condiciones meteorológicas son de tormenta eléctrica intensa (12-15mm de precipitación), alta humedad y vientos, activándose una Alerta Amarilla y un operativo de tormenta/mantenimiento específico para la zona, lo que contribuye a retrasos generales en la Línea 1. La calidad del aire es buena.",
+      "features_numericas_promedio": {
+        "temp": 18.5,
+        "humidity": 86.9,
+        "precip_mm": 9.1,
+        "traffic_jam_level": 4.2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 15,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Xalpa",
+      "resumen_para_roberta": "El servicio de Cablebús en la estación Xalpa ha sido suspendido con alto impacto, dejando a usuarios varados, debido a una tormenta eléctrica severa en la zona. Esta interrupción coincide con condiciones climáticas extremas de tormenta, incluyendo fuertes precipitaciones (hasta 15mm), alta humedad y vientos considerables, evidenciando los desafíos operativos que enfrenta el sistema de transporte por las inclemencias del tiempo.",
+      "features_numericas_promedio": {
+        "temp": 18.5,
+        "humidity": 86.9,
+        "precip_mm": 9.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 15,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Taxqueña",
+      "resumen_para_roberta": "En la terminal Taxqueña se reporta una actividad de mantenimiento en la cabina de un tren de la Línea 1, con el cambio de limpiaparabrisas, lo que sugiere adaptaciones o reparaciones por el clima. Paralelamente, el servicio del Tren Ligero, que parte de esta terminal, experimenta retrasos de hasta 20 minutos causados por la caída de ramas en la catenaria, una problemática recurrente en episodios de lluvia y viento que afecta la regularidad y eficiencia del transporte.",
+      "features_numericas_promedio": {
+        "temp": 18.5,
+        "humidity": 86.9,
+        "precip_mm": 9.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 16,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "La estación Zaragoza en Línea 1 enfrenta una situación crítica. Usuarios reportan múltiples problemas de infraestructura como goteras severas, filtraciones de agua sobre las lámparas del andén con riesgo de corto circuito, encharcamientos en vías y entradas, un apagón momentáneo y un notable olor a humedad. Operacionalmente, los trenes sufren patinaje al frenar, presentan una marcha extremadamente lenta (hasta 5 km/h), realizan detenciones prolongadas en cada estación y operan con andenes a reventar, con quejas de 'estampida humana' y riesgo de caída a las vías. Se ha reportado un tren sin luz en el túnel y presencia de humo con olor a quemado, así como escaleras de subida detenidas, generando caos. Estos incidentes ocurren en un contexto de lluvia generalizada y moderada (hasta 6mm), alta humedad y bajas temperaturas. El tráfico vehicular en Calzada Ignacio Zaragoza es crítico (niveles 4 y 5) debido a accidentes y la combinación de lluvia con la hora pico vespertina y la salida masiva de oficinas. La calidad del aire en la zona es moderada. Otros servicios como Metrobús y Cablebús también sufren retrasos por las condiciones climáticas y la saturación general.",
+      "features_numericas_promedio": {
+        "temp": 17.4,
+        "humidity": 86.1,
+        "precip_mm": 2.5,
+        "traffic_jam_level": 4.6
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 17,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Usuarios de la estación Pino Suárez reportan empujones severos y un ambiente de aglomeración hostil para el acceso. A pesar de que no se registran incidentes de tráfico o eventos masivos específicos para esta ubicación en el lote de datos, se observó lluvia ligera intermitente en la zona metropolitana durante la tarde, lo que podría haber influido en la afluencia de personas.",
+      "features_numericas_promedio": {
+        "temp": 15.5,
+        "humidity": 85.2,
+        "precip_mm": 0.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 17,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "La estación Zaragoza y la Línea 1 del Metro enfrentan múltiples problemas operacionales y de experiencia de usuario. Se reportan detenciones prolongadas y lentitud en el avance de los trenes, con quejas de hasta 15 minutos de espera y fallas en la señalización, lo que llevó a un \"recorrido de 30 min de Zaragoza a Zaragoza\" (sarcástico). Los usuarios mencionan asientos empapados por ventanas abiertas durante la lluvia, olor a quemado por basura en vías, y problemas de infraestructura como lámparas apagadas y escaleras sin funcionar. En cuanto a seguridad, se alertó sobre una persona ebria en el andén y otra dormida en un vagón, una discusión en un vagón de mujeres que requirió intervención policial y un sujeto \"mirando fijamente\" a usuarias. Además, se reportó la activación innecesaria de la palanca de emergencia por broma, y ruidos anormales al frenar. El contexto climático incluye periodos de neblina y lluvia ligera durante la tarde, aunque un usuario indicó que ya había cesado. El tráfico en Calzada Ignacio Zaragoza se mantuvo entre normal y moderado, con la calidad del aire variando de buena a moderada. Se registraron eventos como un partido de fútbol con impacto alto y una disminución de afluencia hacia el final del día, lo que generó comentarios de una \"Línea 1 tranquila\" tras los problemas de la tarde.",
+      "features_numericas_promedio": {
+        "temp": 15.5,
+        "humidity": 85.2,
+        "precip_mm": 0.4,
+        "traffic_jam_level": 2.6
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 17,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Ticomán",
+      "resumen_para_roberta": "No se han detectado quejas directas o incidentes reportados por usuarios en la estación Ticomán. La única actividad registrada relevante para esta ubicación es el ingreso de un tren a su taller para una revisión de bogies, debido a la detección de un ruido anormal, lo que indica labores de mantenimiento o inspección interna del sistema.",
+      "features_numericas_promedio": {
+        "temp": 15.5,
+        "humidity": 85.2,
+        "precip_mm": 0.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "La estación Zaragoza y su entorno presentan un panorama complejo. Usuarios reportan múltiples incidencias de seguridad y orden, incluyendo un sujeto gritando y aparentemente intoxicado en el andén, peleas a botellazos afuera de la estación, un borracho orinando, y la presencia de grafiteros en vagones y la terminal. Se documentan quejas sobre basura en los vagones, personas fumando marihuana en la L1 dirección Constitución, una fuga de agua en los baños, y el túnel de L1 a oscuras causando claustrofobia, además de una alarma por alguien caminando en las vías y un fuerte olor a gas que movilizó a bomberos. A nivel operativo, hubo retrasos de 15 minutos en L1, saturación en los últimos trenes y problemas con el enlace de comunicación TETRA en el túnel Zaragoza-Raza. La zona experimenta un mantenimiento intensivo con reparación de losas, ingreso de maquinaria pesada, cambio de riel y coordinación para corte de corriente en L1. El tráfico superficial en Calzada Ignacio Zaragoza muestra congestión moderada (`jam_level 2-3`) por obras de bacheo y reencarpetado. El clima es fresco con `nubes dispersas` (`11.8°C`) y `niebla` en áreas cercanas, mientras la calidad del aire se mantiene `Buena`.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": 2.1
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "En la estación Observatorio, los usuarios expresan frustración por la falta de información sobre los horarios del último tren, reportando que no obtienen respuesta en taquilla. Esta situación subraya una deficiencia en la comunicación operativa durante el cierre del servicio, dejando a los pasajeros sin certezas sobre su transporte nocturno.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Usuarios en Balbuena se quejan de un retraso considerable en la Línea 1, con esperas de hasta 20 minutos sin que el tren avance, generando impaciencia y preocupación por la demora en sus traslados al cierre del servicio.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "La terminal Pantitlán está finalizando su servicio, con reportes de policía desalojando vagones para asegurar el cierre de operaciones. Esto marca la conclusión de la jornada, indicando el fin del flujo de pasajeros en la estación.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Constitución",
+      "resumen_para_roberta": "En la Línea 1, dirección Constitución, usuarios denuncian la presencia de personas fumando marihuana en el último vagón. Adicionalmente, hay quejas por la interrupción del servicio del último tren de L1, que no llega hasta Zaragoza, obligando a los pasajeros a descender en Constitución y buscar alternativas para continuar su trayecto.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Raza",
+      "resumen_para_roberta": "La estación Raza se ve directamente afectada por la pérdida de enlace TETRA en el túnel Zaragoza-Raza, lo que compromete las comunicaciones de la radio base. Además, se están llevando a cabo trabajos de mantenimiento preventivo, con escaneo de rieles en el tramo Potrero-Raza para identificar posibles fisuras y asegurar la infraestructura.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Potrero",
+      "resumen_para_roberta": "En el tramo Potrero-Raza, se realizan importantes trabajos de mantenimiento nocturno, incluyendo el escaneo de rieles para detectar fisuras y garantizar la seguridad estructural de las vías. Esta operación es crucial para la prevención de fallas y el correcto funcionamiento del servicio.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Bellas Artes",
+      "resumen_para_roberta": "La estación Bellas Artes es parte de un operativo de limpieza profunda de andenes, clasificado como mantenimiento rutinario de bajo impacto. Estas labores contribuyen a la higiene y mantenimiento general de la estación durante las horas de cierre del servicio.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Allende",
+      "resumen_para_roberta": "La estación Allende está siendo objeto de una limpieza profunda de andenes, como parte de las tareas de mantenimiento rutinario con un bajo nivel de impacto. Estos trabajos nocturnos buscan optimizar las condiciones de la estación para el servicio diario.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 18,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Tlalpan",
+      "resumen_para_roberta": "Vecinos de Tlalpan se quejan de ruidos molestos por martilleos provenientes de las vías del metro, lo que sugiere trabajos de mantenimiento nocturno en la infraestructura. La zona presenta condiciones climáticas de `niebla` con temperaturas entre `7.8°C` y `12.5°C` y alta humedad (`90-96%`), resultando en una visibilidad reducida de hasta `500m`.",
+      "features_numericas_promedio": {
+        "temp": 11.5,
+        "humidity": 89.7,
+        "precip_mm": 0.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En la estación Zaragoza y sus alrededores, se reportan múltiples incidencias de seguridad e infraestructura. Usuarios alertan sobre luminarias apagadas y una lámpara fundida en el acceso norte, creando zonas oscuras y peligrosas, además de una alcantarilla sin tapa en el cruce de Tlalpan y Zaragoza. Se identificó un bache considerable en Calzada Ignacio Zaragoza que afectó un vehículo y hay preocupación por olores a gas LP y mercaptano en las calles cercanas, sugiriendo posibles fugas. También se registraron quemas de basura y pastizales próximas a las vías, generando humo. Operacionalmente, la Línea 1 ha estado activa con mantenimiento de alto impacto como la sustitución de rieles, soldadura en cambios de vía y nivelación de balasto en tramos elevados, junto con una inspección de túneles y revisión de cableado de alta tensión. La subestación Zaragoza completó maniobras de libranza y energización para preparar la apertura, mientras se realiza fumigación de vagones, limpieza de torniquetes y verificación del sistema de voceo. El tráfico en Calzada Ignacio Zaragoza es normal, aunque con limpieza de carriles. La calidad del aire es buena. Las temperaturas generales en la ciudad oscilan entre 6 y 8.5°C, con neblina o cielo nublado, sumado a quejas sobre el frío en el transporte público como el Nochebús.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Chabacano",
+      "resumen_para_roberta": "La estación Chabacano, en la Línea 1, tiene programado mantenimiento en sus escaleras. Esta actividad se enmarca en un contexto más amplio de operaciones en la misma línea, incluyendo la verificación del sistema de voceo y la reciente conclusión de una inspección del cableado de alta tensión en los túneles, ambas consideradas de bajo a medio impacto. El tráfico superficial en vías principales se mantiene fluido, aunque con presencia de niebla y neblina. Las temperaturas generales durante la madrugada oscilan entre 6 y 8.5 grados Celsius, contribuyendo a la sensación de frío en el ambiente y reportes de ventanas abiertas en el Nochebús a bajas temperaturas.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Jamaica",
+      "resumen_para_roberta": "En la estación Jamaica de la Línea 1, se ha calendarizado el mantenimiento de escaleras. Paralelamente, se completó la inspección del cableado de alta tensión en los túneles y se realizó la verificación del sistema de voceo en las estaciones de la Línea 1, todas acciones con un impacto entre bajo y medio. A nivel de superficie, el tráfico se reporta normal a fluido. Las condiciones climáticas de la madrugada incluyen temperaturas frías, entre 6 y 8.5 grados Celsius, con presencia de neblina o cielo parcialmente cubierto, lo que ha generado quejas sobre el frío en el transporte público.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "En la estación Balderas, se completó la revisión de los sistemas contra incendio. Estas labores se complementan con la verificación del sistema de voceo y la inspección del cableado de alta tensión en los túneles de la Línea 1, todas con un nivel de impacto bajo a medio. El tráfico en las vialidades principales se percibe fluido, mientras que las condiciones climáticas generales de la madrugada muestran temperaturas bajas, entre 6 y 8.5 grados Celsius, con presencia de neblina y cielos parcialmente nublados. Hay menciones generales sobre el intenso frío en la ciudad, afectando la percepción del transporte público.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Bellas Artes",
+      "resumen_para_roberta": "La estación Bellas Artes recientemente concluyó la revisión de sus sistemas contra incendio, una tarea de bajo impacto. En el mismo período, se llevó a cabo la inspección del cableado de alta tensión en los túneles de la Línea 1 y la verificación del sistema de voceo en las estaciones, con impactos entre bajo y medio. El tráfico en las principales vialidades se mantiene fluido. Durante la madrugada, las temperaturas registradas son frías, entre 6 y 8.5°C, con neblina y cielo parcialmente cubierto, lo que contribuye a la sensación general de frío en la ciudad.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 19,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Tasqueña",
+      "resumen_para_roberta": "Cerca de la estación Tasqueña, particularmente en el Taller Tasqueña, se llevó a cabo una operación de alto impacto: el retiro de una dresina de la vía de la Línea 1. Esta actividad se suma a la verificación del sistema de voceo y la inspección del cableado de alta tensión en los túneles de la Línea 1, con impactos entre bajos y medios. Las condiciones generales de tráfico en la ciudad son fluidas. La madrugada estuvo marcada por temperaturas bajas, oscilando entre 6 y 8.5 grados Celsius, con neblina o cielo nublado, generando un ambiente frío generalizado.",
+      "features_numericas_promedio": {
+        "temp": 7.3,
+        "humidity": 90.8,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "La estación Insurgentes enfrenta un caos matutino con quejas por el frío antes de la apertura, saturación extrema que impide el paso y requiere trenes vacíos, torniquetes colapsados y averías como fallas de señalización que detienen los trenes, junto a reportes de trenes parados entre estaciones y puertas lentas o entreabiertas. Se detectó olor a quemado con gente tosiendo, un desmayo en vagón de mujeres y la caída de muletas y un celular a las vías, interrumpiendo el servicio. Las escaleras están fuera de servicio y la estación presenta problemas de limpieza (basura en vías y vagones) y olores a drenaje. El calor es un problema constante en la Línea 1, con reportes de ventilación ineficaz, aire acondicionado averiado y desmayos por las altas temperaturas en el andén y vagones. La seguridad es una preocupación por carteristas y vendedores ambulantes agresivos, sumado a un simulacro de evacuación. El entorno vial en Av. Insurgentes Sur es complejo con tráfico pesado por accidentes, afluencia vehicular y semáforos descompuestos, además de bloqueos cerca de la Glorieta de Insurgentes. La calidad del aire oscila entre buena y dañina para grupos sensibles (PM10, PM2.5 y O3 elevados). Se realizan mantenimientos rutinarios a torniquetes, luminarias y se inspeccionan filtraciones en túneles, con limpieza de andenes reportada.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.1
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "En la estación Pino Suárez, el personal de limpieza realiza labores de baldeo en los andenes, por lo que se advierte a los usuarios sobre el piso mojado para evitar incidentes.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Chabacano",
+      "resumen_para_roberta": "La estación Chabacano se encuentra bajo mantenimiento de escaleras en la Línea 1, lo que podría generar inconvenientes para los usuarios que transitan por la estación.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Usuarios de la Línea 1 reportan que los trenes permanecen detenidos en la estación Moctezuma por al menos diez minutos, causando demoras significativas en su trayecto.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "La Raza",
+      "resumen_para_roberta": "En la estación La Raza, se reportan goteras en el pasillo de transbordo entre las líneas, afectando las condiciones y la comodidad para los usuarios que hacen conexión.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Zócalo",
+      "resumen_para_roberta": "La estación Zócalo recibirá una visita escolar programada, un evento rutinario con bajo impacto esperado en la operación general de la estación durante la mañana.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 20,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "La zona de la estación Cuauhtémoc experimenta condiciones climáticas variadas. Se inició la mañana con neblina ligera y temperaturas frescas de 9°C, evolucionando a un cielo mayormente despejado y soleado, aunque con algunas nubes dispersas, y una temperatura ascendente hasta los 21°C. No se ha registrado precipitación alguna.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 48,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 21,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "En la estación Insurgentes, usuarios de la Línea 1 expresan indignación por el calor extremo e insoportable dentro de los trenes, calificándolos de \"horno de microondas\" y exigiendo ventilación. Se reportaron incidentes graves con las escaleras, incluyendo una que \"tronó\" con gente y otra que se detuvo abruptamente, sumándose a quejas frecuentes sobre escaleras apagadas. El servicio de la Línea 1 presentó lentitud, detenciones en la estación, frenados de golpe y paradas prolongadas en el túnel hacia Merced. Incidentes de seguridad incluyen peleas en el andén, la caída de objetos a las vías con una persona bajando a recoger un zapato, y reportes de un posible robo en vagón. Se detectó olor a quemado en un tren y un globo metálico que amenazaba con un corto. El personal técnico realizó revisiones de ventilación, luminarias, torniquetes, señalización y cárcamos de bombeo. El entorno superficial presenta tráfico pesado en Av. Insurgentes Sur debido a obras, zonas de restaurantes y manifestaciones, coincidiendo con una calidad del aire \"no saludable para grupos sensibles\" por ozono. El clima dominante es soleado con temperaturas cercanas a los 30°C y alto índice UV, aunque hubo un registro de lluvia ligera hacia el final. Además, una estación Ecobici cercana se reportó sin espacios disponibles.",
+      "features_numericas_promedio": {
+        "temp": 25.4,
+        "humidity": 34.9,
+        "precip_mm": 0.1,
+        "traffic_jam_level": 3.4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 21,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "La estación Merced, ubicada en la Línea 1, fue afectada directamente por una detención significativa del tren en el túnel entre Insurgentes y Merced, contribuyendo a la lentitud general del servicio reportada por usuarios en esta línea. A lo largo del día, la Línea 1 recibió múltiples quejas por el calor \"insoportable\" dentro de los vagones, describiéndolos como \"hornos\", en un día que registró altas temperaturas (cercanas a los 30°C) y un índice UV \"Extremo\" o \"Muy Alto\", aunque hacia el final del periodo hubo reportes de lluvia ligera. La calidad del aire en la zona de la Línea 1, específicamente en Insurgentes, se mantuvo mayormente \"no saludable para grupos sensibles\" debido a la concentración de ozono, lo que añade al contexto de incomodidad ambiental. Aunque no hay reportes específicos de tráfico o eventos *en* Merced, las condiciones de tráfico pesado en la superficie cercanas a la Línea 1 (como en Insurgentes) y los eventos rutinarios como salidas de oficinas pudieron haber contribuido al flujo de pasajeros y la percepción de saturación en la línea.",
+      "features_numericas_promedio": {
+        "temp": 25.4,
+        "humidity": 34.9,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 21,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "La estación Balbuena, en la Línea 1, fue el punto de un incidente específico donde un usuario reportó un \"rechinido horrible\" del tren al transitar por la curva, generando preocupación. Este evento ocurre en un contexto donde la Línea 1 es objeto de múltiples quejas por el calor \"insoportable\" y la falta de aire acondicionado en los vagones, describiéndolos como \"hornos\". A lo largo del día, las condiciones climáticas fueron desafiantes, con predominio de sol, temperaturas elevadas (cercanas a los 30°C) y un índice UV que osciló entre \"Extremo\" y \"Muy Alto\" durante gran parte de la jornada, aunque al final se registraron periodos de lluvia ligera y vientos moderados. La calidad del aire en la región de la Línea 1, con mediciones en Insurgentes, mostró niveles \"no saludables para grupos sensibles\" debido al ozono, lo que añade al ambiente de incomodidad para los viajeros. Aunque no hay reportes directos de tráfico o eventos específicos en Balbuena, las fluctuaciones en el tráfico superficial de la Línea 1 y los eventos urbanos generales podrían influir en la experiencia del usuario.",
+      "features_numericas_promedio": {
+        "temp": 25.4,
+        "humidity": 34.9,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 22,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Insurgentes (Línea 1)",
+      "resumen_para_roberta": "La estación Insurgentes de la Línea 1 enfrenta una situación crítica de saturación y múltiples incidentes. Usuarios reportan filas para entrar que alcanzan la calle, andenes completamente llenos y la imposibilidad de abordar, con empujones y problemas en el cierre de puertas. La lluvia generalizada, con precipitaciones que varían de moderadas a fuertes, junto con tormentas y neblina, agrava la situación: se documentan filtraciones de agua desde el techo sobre las vías electrificadas, goteras en escaleras mojadas que causan resbalones, la entrada de la estación inundada y trenes que patinan al llegar. Se reportó un tren detenido con puertas abiertas, permitiendo la entrada de agua, y la presencia de humo con olor a balata en un vagón. Las fallas operativas incluyen el bloqueo de torniquetes por saturación, escaleras mecánicas detenidas, problemas en el sistema de voceo, variaciones de voltaje y apagones en la estación. Un paraguas caído a las vías provocó un cortocircuito, y un árbol caído afectó una de las entradas. La congestión se intensifica por la hora pico de regreso, la salida de corporativos y plazas comerciales, además de eventos masivos cercanos. Esto genera un tráfico vehicular pesado en Avenida Insurgentes Sur, con accidentes y encharcamientos severos, afectando también la operación del Metrobús. La presencia de vagoneros peleando y obstruyendo el paso contribuye al caos general, sumado a quejas por el calor insoportable en la estación.",
+      "features_numericas_promedio": {
+        "temp": 17.1,
+        "humidity": 90.2,
+        "precip_mm": 5.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 22,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Línea 1 (General)",
+      "resumen_para_roberta": "La Línea 1 opera bajo condiciones adversas y presenta problemas recurrentes. La sección elevada es descrita como un 'horno solar', generando quejas por las altas temperaturas. Debido a un 'Operativo Lluvia Metro', se ha implementado la marcha de seguridad en toda la red, lo que provoca que los trenes avancen a 'paso de tortuga' en tramos elevados y se detengan hasta por diez minutos en cada estación o en túneles, causando desesperación entre los usuarios y quejas por la falta de avisos claros. Se reportó la falta de luz en un vagón en pleno túnel, generando alarma. El ambiente general dentro de los trenes se percibe incómodo por el olor nauseabundo a humedad y ropa mojada, reflejo del impacto de las intensas lluvias y la alta afluencia de pasajeros en plena hora pico de regreso.",
+      "features_numericas_promedio": {
+        "temp": 17.1,
+        "humidity": 90.2,
+        "precip_mm": 5.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 22,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Línea B (General)",
+      "resumen_para_roberta": "En la Línea B del Metro, los usuarios reportan condiciones incómodas y caóticas. El agua de la lluvia se filtra por las ventilas del techo de los vagones, mojando a los pasajeros. La línea es descrita como una 'locura', caracterizada por empujones y gritos entre los usuarios, lo que sugiere una alta saturación y tensión. Estos problemas se desarrollan en un contexto de lluvias activas y horas de alta afluencia de personas en la ciudad, incrementando la dificultad y el malestar para los viajeros.",
+      "features_numericas_promedio": {
+        "temp": 17.1,
+        "humidity": 90.2,
+        "precip_mm": 5.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 22,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "En la estación Boulevard Puerto Aéreo, las operaciones relacionadas con la infraestructura crítica de drenaje se reportan estables. A pesar de las condiciones de lluvia generalizada y alta humedad en la ciudad, el monitoreo constante de los niveles en el cárcamo indica que el sistema de achique está operando de manera normal y eficiente. No se han detectado incidencias destacadas ni quejas de usuarios en este punto.",
+      "features_numericas_promedio": {
+        "temp": 17.1,
+        "humidity": 90.2,
+        "precip_mm": 5.2,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 23,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Usuarios en la Línea 1 de Insurgentes alertan sobre la presencia de carteristas operando en grupo, recomendando precaución con los celulares. El tráfico en Av. Insurgentes Sur es normal, con congestión moderada (nivel 3) y una velocidad de 40 km/h, coincidiendo con un evento de concierto de impacto medio en la Glorieta de Insurgentes. La calidad del aire se clasifica como moderada debido a la presencia de PM2.5. Además, se registran quejas generales en la Línea 1 sobre trenes que se detienen por 5 minutos en cada estación y el aire acondicionado excesivamente frío a pesar de la lluvia, causando incomodidad.",
+      "features_numericas_promedio": {
+        "temp": 14.2,
+        "humidity": 88.2,
+        "precip_mm": 0.3,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 23,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "La estación Boulevard Puerto Aéreo de la Línea 1 es el foco de numerosas quejas y problemas. Usuarios reportan esperas de 20 minutos y trenes que tardan mucho en llegar, dejando andenes llenos y provocando empujones brutales. Se alertó sobre una bolsa de basura en las vías con olor a quemado, un frenón repentino en el túnel con pérdida de luz, y humo saliendo del mismo, además de un fuerte olor a gas. En materia de seguridad y limpieza, se reportó una riña en un vagón, un usuario desvanecido en el andén, un sujeto orinando en el pasillo de transbordo, un perro buscando comida, y la estación es percibida como insegura y sola sin policías. Un tipo borracho también fue señalado por molestar a usuarias. Los usuarios también se quejan de una escalera con ruido metálico y una lámpara estroboscópica que marea en un pasillo de correspondencia. La calidad del aire es buena, pero hay una reparación de fuga de agua con impacto medio en curso en la zona. El tráfico superficial en Viaducto Río de la Piedad se mantiene en niveles normales (jam_level 2-3).",
+      "features_numericas_promedio": {
+        "temp": 14.2,
+        "humidity": 88.2,
+        "precip_mm": 0.3,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 23,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Raza",
+      "resumen_para_roberta": "Se ha llevado a cabo un reporte de mantenimiento en la estación Raza, específicamente para el reemplazo de lámparas fundidas en el pasillo de correspondencia, indicando trabajos rutinarios para asegurar la iluminación en la zona.",
+      "features_numericas_promedio": {
+        "temp": 14.2,
+        "humidity": 88.2,
+        "precip_mm": 0.3,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 24,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "Usuarios reportan múltiples incidentes en la estación Boulevard Puerto Aéreo de la Línea 1, incluyendo la caída de una botella rota a las vías, una gotera en el andén con piso mojado, y una luminaria fundida en un acceso. Se ha detectado a una persona fumando en el andén sin intervención policial aparente. La estación fue oficialmente cerrada, con personal de seguridad colocando cadenas en los accesos mientras aún había gente, generando apuros entre quienes buscaban alcanzar el último tren o salir. Operativamente, se solicitó libranza para inspeccionar el tercer riel de la L1 en el tramo, se ingresó personal de limpieza y se inició mantenimiento en la estación. El tráfico superficial en el Viaducto Río de la Piedad, cercano a la estación, presenta condiciones normales con cierres temporales de carriles centrales por obras. La calidad del aire se reporta como buena.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 89.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 24,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Barranca",
+      "resumen_para_roberta": "En la estación Barranca, usuarios se quejan del apagado prematuro de las escaleras de subida, lo que dificulta el tránsito. Este inconveniente surge en el contexto del inminente cierre del servicio del Metro, con avisos de últimos trenes y el subsiguiente cierre definitivo de accesos en toda la red. Las condiciones climáticas generales en la ciudad durante este período nocturno incluyen neblina y temperaturas frías.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 89.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 24,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "El Rosario",
+      "resumen_para_roberta": "La terminal El Rosario registró un incidente donde la policía intervino para despertar a un usuario dormido, en un horario cercano al fin de operaciones del Metro. Las condiciones ambientales generales en la ciudad son de neblina y bajas temperaturas, y el transporte alternativo como el Nochebús presenta tiempos de espera de hasta 30 minutos, lo que podría afectar la salida de usuarios de las terminales.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 89.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 24,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Línea 1",
+      "resumen_para_roberta": "Los usuarios de la Línea 1 expresan diversas quejas sobre las condiciones de los trenes y el servicio en general durante las últimas horas de operación. Se reporta un vagón muy solo que genera sensación de inseguridad, mientras que, contradictoriamente, el último tren viene saturado, llevando a demandas de unidades adicionales. Otros incidentes incluyen un vagón en estado insalubre con botellas y bolsas, grafitis en los asientos de un tren nuevo, un conductor que se desplaza a velocidad excesiva y la presencia de un pasajero cantando a gritos, generando disturbios. Paralelamente, personal de limpieza profunda y de inspección de vías ingresa a los túneles y tramos superficiales de la L1. El clima general es frío, húmedo y con neblina.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 89.4,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  }
+]

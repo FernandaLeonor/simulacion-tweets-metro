@@ -14,11 +14,14 @@ venv/
 datos_entrenamiento.json
 modelo_final.cbm
 catboost_info/
+features_embeddings.csv
+modelo_deteccion_falla.cbm
+modelo_clasificacion_falla.cbm
+label_encoding.json
 
 # Archivos temporales o de logs
 *.log
 *.tmp
-*.json  # si hay logs generados por tu script y no quieres subirlos
 
 # Carpeta de cache de Sentence Transformers / HuggingFace
 .cache/
